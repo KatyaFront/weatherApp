@@ -38,7 +38,7 @@ body {
   font-variant-numeric: lining-nums;
   line-height: 24px;
   color: var(--basic-text-color);
-  background: url('/public/images/background.jpeg');
+  background: url(../../public/images/background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
