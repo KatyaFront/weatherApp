@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title> 
+    <link rel="icon" type="image/svg+xml" href="public/images/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="public/images/favicon/favicon.png">      
+    <link rel="stylesheet" href="src/styles/normalise.css">
+    <link rel="stylesheet" href="src/styles/style.css">  
+    <link rel="stylesheet" href="src/styles/media.css">   
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <a href="#" class="header__logo">
+            <picture class="header__logo-picture">              
+              <source srcset="public/images/logo-tablet-mobile.svg" media="(max-width: 1023px)">
+              <img src="public/images/logo.svg" alt="логотип">
+            </picture>
+          </a>     
+          <form class="header__form" action="/">
+            <input
+            class="header__input"
+            id="input"
+            type="search"
+            placeholder="Поиск по городу"            
+            >          
+            <span class="header__search" id="search"></span>
+            <button class="header__close" id="close" aria-label="очистить поле ввода">
+              <img class="header__close-img" src="public/images/close.svg" alt="close">
+            </button> 
+          </form>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero">
+          <div class="hero__container container">
+            <h1 class="hero__title visually-hidden">Прогноз погоды</h1>
+            <div class="hero__wather">
+              <div class="hero__description">
+                <p class="hero__city">Москва</p>
+                <p class="hero__date desc">Суббота, 06 января</p>
+                <p class="hero__time desc">11:29</p>
+              </div>
+              <p class="hero__temperature">-7&#176;</p>
+              <div class="hero__description">
+                <p class="hero__desc-weather desc"><span class="hero__svg"></span>Облачно</p>         
+                <p class="hero__desc-feel desc">Ощущается как -11&#176;</p>
+              </div>
+            </div>
+            <div class="hero__cards">
+              <ul class="hero__list list" id="list"></ul>
+            </div>
+          </div>        
+        </section>
+
+        <section class="forecast">
+          <div class="forecast__container container">
+            <div class="forecast__main">
+              <h2 class="forecast__title">Прогноз:</h2>              
+                <button class="forecast__tablink is-active" data-target-id="list-forecast-day" aria-label="погода на 24 часа">на 24 часа</button>
+                <button class="forecast__tablink" data-target-id="list-forecast-five-days" aria-label="погода на 5 дней">на 5 дней</button>              
+            </div>
+            <div class="forecast__wapper">
+              <button class="forecast__tabcontent-button-carousel button-left" aria-label="листать влево">
+                <img class="button-left__icon" src="public/images/arrow-left.svg" alt="arrow-left">
+              </button>              
+              <ul class="forecast__list-tabcontent show-tabcontent" id="list-forecast-day"></ul>                            
+              <ul class="forecast__list-tabcontent" id="list-forecast-five-days"></ul>              
+              <button class="forecast__tabcontent-button-carousel button-right" aria-label="листать вправо">
+                <img class="button-right__icon " src="public/images/arrow-right.svg" alt="arrow-right">
+              </button>
+            </div>
+          </div>          
+        </section>
+      </main>
+      
+      <footer class="footer">
+        <div class="footer__container container">
+          <p class="footer__description">Проект выполнен в рамках стажировки <a class="footer__link" href="https://preax.ru" target="_blank" aria-label="ссылка на сайт PREAX">PREAX</a></p>
+        </div>           
+      </footer>
+    </div> 
+    
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>
