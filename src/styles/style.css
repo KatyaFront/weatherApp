@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Raleway';
-  src: url('/public/fonts/raleway-regular.woff2') format('woff2'),
-      url('/public/fonts/raleway-regular.woff') format('woff');
+  src: url('../../public/fonts/raleway-regular.woff2') format('woff2'),
+      url('../../public/fonts/raleway-regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: 'Raleway';
-  src: url('/public/fonts/raleway-bold.woff2') format('woff2'),
-      url('/public/fonts/raleway-bold.woff') format('woff');
+  src: url('../../public/fonts/raleway-bold.woff2') format('woff2'),
+      url('../../public/fonts/raleway-bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -160,7 +160,7 @@ input[type='search']::-webkit-search-cancel-button {
 }
 
 .header__search {  
-  background-image: url(/public/images/search.svg);
+  background-image: url(../../public/images/search.svg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,7 +251,7 @@ input[type='search']::-webkit-search-cancel-button {
   display: block;
   width: 24px;
   height: 24px;
-  background: url(/public/images/icon-weather-cloudy.svg);
+  background: url(../../public/images/icon-weather-cloudy.svg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;

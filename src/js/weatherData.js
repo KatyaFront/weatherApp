@@ -1,7 +1,7 @@
 export const weatherData = [
   {
     title: 'Влажность',
-    icon: 'url("/public/images/humidity.svg")',
+    icon: 'url(../../public/images/humidity.svg)',
     indicator: '75 %',
     progress: true,
     progressMax: 100,
@@ -9,7 +9,7 @@ export const weatherData = [
   },
   {
     title: 'Давление',
-    icon: 'url(/public/images/barometr.svg)',
+    icon: 'url(../../public/images/barometr.svg)',
     indicator: '761',
     desc: 'Повышенное',
     progress: true,
@@ -18,7 +18,7 @@ export const weatherData = [
   },
   {
     title: 'Видимость',
-    icon: 'url(/public/images/visibility.svg)',
+    icon: 'url(../../public/images/visibility.svg)',
     indicator: '28 км',
     desc: 'Нормальная',
     progress: true,
@@ -27,19 +27,19 @@ export const weatherData = [
   },
   {
     title: 'Рассвет',
-    icon: 'url(/public/images/sunrise.svg)',
+    icon: 'url(../../public/images/sunrise.svg)',
     indicator: '8:42',
     desc: 'Прошло: 02:47',
   },
   {
     title: 'Закат',
-    icon: 'url(/public/images/sunset.svg)',
+    icon: 'url(../../public/images/sunset.svg)',
     indicator: '16:37',
     desc: 'Осталось: 05:08',
   },
   {
     title: 'Сила ветра',
-    icon: 'url(/public/images/northwest.svg)',
+    icon: 'url(../../public/images/northwest.svg)',
     indicator: '2 м/с',
     desc: 'Северо-западный',
   },
