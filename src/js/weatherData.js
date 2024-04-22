@@ -1,7 +1,7 @@
 export const weatherData = [
   {
     title: 'Влажность',
-    icon: 'url(/public/images/humidity.svg)',
+    icon: 'url("/public/images/humidity.svg")',
     indicator: '75 %',
     progress: true,
     progressMax: 100,
